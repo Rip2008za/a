@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การแสดงรูปภาพ</title>
+    <style>
+        /* กำหนดพื้นฐานสำหรับ body */
+        body {
+            font-family: 'Noto Sans Thai', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        /* กำหนดสไตล์สำหรับรูปภาพ */
+        .image-container {
+            margin-top: 50px;
+            display: inline-block;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        /* การเพิ่มเอฟเฟกต์เมื่อเอาเมาส์ชี้ไปที่รูป */
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        /* กำหนด caption */
+        .image-caption {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462571343_455261213980762_7748348161565372185_n.jpg?stp=dst-jpg_p480x480_tt6&_nc_cat=108&ccb=1-7&_nc_sid=0024fc&_nc_ohc=4PgMd5pxbYsQ7kNvgE7v7qI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QFDeMzX-EUFo8FNkFVPBjeX93Pt-ODN6bw5A7sPiXPa7w&oe=677E903F" alt="ตัวอย่างรูปภาพ">
+        <div class="image-caption">ตามหาคนหายโน่168ล็อคดาว</div>
+    </div>
+</body>
+</html>
